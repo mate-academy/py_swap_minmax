@@ -1,4 +1,4 @@
-# py_change
+# py_swap_minmax
 
 Create a function for swapping minimal and maximal elements of a list. Don't use built-in min()/max() functions.
 
