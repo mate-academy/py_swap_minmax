@@ -47,3 +47,21 @@ def swap_minmax(lst: List[int]) -> List[int]:
     min_max_nums = lst[min_num_idx], lst[max_num_idx]
     lst[max_num_idx], lst[min_num_idx] = min_max_nums
     return lst
+
+
+def swap_minmax_den_solution(lst: List[int]) -> List[int]:
+    if not lst:
+        return lst
+
+    minv, mini = lst[0], 0
+    maxv, maxi = lst[0], 0
+
+    for i, el in enumerate(lst):
+        if el < minv:
+            minv = el
+            mini = i
+        if el > maxv:
+            maxv = el
+            maxi = i
+    lst[mini], lst[maxi] = maxv, minv
+    return lst
