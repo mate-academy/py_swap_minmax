@@ -10,7 +10,7 @@ def test_ordered():
 
 
 def test_all_the_same():
-    assert swap_minmax.swap_minmax([1, 1, 1]) ==[1, 1, 1]
+    assert swap_minmax.swap_minmax([1, 1, 1]) == [1, 1, 1]
 
 
 def test_one_item():
